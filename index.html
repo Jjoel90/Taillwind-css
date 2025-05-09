@@ -9,71 +9,98 @@
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 <body class="bg-black text-white ">
-    <header class="head flex items-center justify-between">
-        <div>
-            <img src="Logo.svg" alt="">
+    <header class="head flex items-center justify-between px-3">
+        <div >
+            <img src="Logo.svg" alt="logo" class="w-40 h-auto">
         </div>
-        <div class="flex gap-4 items-center ">
-            <div><a href="">home</a></div>
-            <div><a href="">about</a></div>
-            <div><a href="">sections</a></div>
-            <div><a href="">projects</a></div>
-            <div><a href="">testimonials</a></div>
-            <div><a href="">conctact</a></div>
-     
-            <div class="bg-orange-400 px-3 py-2 rounded-md hover:bg-orange-600">  
-           <button >download CV</button>    
+        <div class="flex items-center gap-3">
+            <div class="flex gap-4 items-center hidden md:flex ">
+                <div><a href="">home</a></div>
+                <div><a href="">about</a></div>
+                <div><a href="">sections</a></div>
+                <div><a href="">projects</a></div>
+                <div><a href="">testimonials</a></div>
+                <div><a href="">conctact</a></div>
+            </div>
+            <div>
+                <i class="bi bi-list text-6xl md:hidden"></i>
+            </div>
+
+            <div class="bg-orange-400 px-3 py-2 rounded-md hover:bg-orange-600">
+                <button >download CV</button>    
             </div>
         </div>
 
     </header>
     <main>
-        <section class="Hero-section">
+        <section class="Hero-section mx-4">
+            <div class="space-y-5">
             <div>
-            <p>hi  i am</p>
-            <p>fawzi sayed</p>
-            <h1>UI & UX Designer</h1>
-            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta dolorem deserunt ex, ut reiciendis labore soluta tenetur voluptatibus esse accusamus doloremque voluptas fugiat laudantium neque consequuntur sequi commodi exercitationem?</p>
-            <h3>hire me</h3>
-            
+                <p class="font-semibold">Hi  i am</p>
+                <p class="text-md text-orange-400 font-semibold capitalize">fawzi sayed</p>
+            </div>
+            <div>
+                <h1 class="text-6xl capitalize font-bold">uI & uX </h1>
+                <p class="text-6xl mx-15 capitalize font-bold">designer</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta dolorem deserunt ex, ut reiciendis labore soluta tenetur voluptatibus esse accusamus doloremque voluptas fugiat laudantium neque consequuntur sequi commodi exercitationem?</p>
+            <div>
+                <button class="bg-orange-400 px-3 py-2 rounded-md hover:bg-orange-600 capitalize">hire me</button>
+            </div>
             
             </div>
             <div>
-                <img src="photo-1.png" alt="">
+                <img src="photo-1.png" alt="photo" class="m-4">
             </div>
-            <div>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-twitter-x"></i>
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-linkedin"></i>
+            <div class="flex justify-center gap-3 m-4 ">
+                <i class="bi bi-facebook text-2xl"></i>
+                <i class="bi bi-twitter-x text-2xl"></i>
+                <i class="bi bi-instagram text-2xl"></i>
+                <i class="bi bi-linkedin text-2xl"></i>
             </div>
         </section>
 
-        <section class="About-Me">
-            <div>
-                <img src="photo-2.png" alt="">
+        <section class="About-Me mx-4 my-10 capitalize ">
+            <div class="my-6 space-y-5">
+                
+                <img src="photo-2.png" alt="about photo">
+
+                <div class="my-6 space-y-5">
+                    <div class="space-y-5">
+                        <h1 class="text-4xl font-semibold "> about me </h1>
+                        <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dolorem. Maxime incidunt, officia enim, eum doloremque ipsam harum magni ullam placeat obcaecati reiciendis quasi sunt eveniet numquam tenetur praesentium quia!</p>
+                    </div>
+                    
+                    <div>
+                        <p class="font-semibold capitalize">uX</p>
+                        <img src="level.svg" alt="">
+                    </div>
+
+                    <div>
+                        <p class="font-semibold">website design</p>
+                        <img src="level.svg" alt="">
+                    </div>
+
+                    <div>
+                        <p class="font-semibold">app design</p>
+                        <img src="level.svg" alt="">
+                    </div>
+
+                    <div>
+                        <p class="font-semibold">graphic design</p>
+                        <img src="level.svg" alt="">
+                    </div>
                 </div>
-                <h1>about me</h1>
-                <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dolorem. Maxime incidunt, officia enim, eum doloremque ipsam harum magni ullam placeat obcaecati reiciendis quasi sunt eveniet numquam tenetur praesentium quia!</p>
-                <div>
-                <p>ux</p>
-                <img src="level.svg" alt="">
-                <p>website design</p>
-                <img src="level.svg" alt="">
-                <p>app design</p>
-                <img src="level.svg" alt="">
-                <p>graphic design</p>
-                <img src="level.svg" alt="">
-            </div>
         </section>
 
-        <section class="services">
-            <div >
-                <h2>services</h2>
-                <p>lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto repudiandae aut quidem quos iusto voluptatem animi quia non incidunt unde harum corporis, ut nulla dolores? Alias iure pariatur vero minus?</p>
+        <section class="services mx-4 my-10 capitalize">
+            <div class="space-y-5 capitalize" >
+                <div class="space-y-5">
+                    <h2 class="text-4xl font-semibold space-y-5">services</h2>
+                    <p>lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto repudiandae aut quidem quos iusto voluptatem animi quia non incidunt unde harum corporis, ut nulla dolores? Alias iure pariatur vero minus?</p>
 
-            </div>
-            <div>
+                </div>
+                <div>
                 <div>
                     <img src="svg-1.svg" alt="">
                     <h1>ui/ux</h1>
@@ -95,9 +122,10 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore corrupti, earum labore ad rem impedit ratione, obcaecati, autem ducimus facere ex. Ullam corrupti reprehenderit quos iure autem cum nisi?</p>
                 </div>
             </div>
+        </div>
         </section>
 
-        <section class="My-Projects">
+        <section class="My-Projects mx-4">
             <h1>my projects</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nam ad impedit officiis non sequi eaque ea mollitia repudiandae pariatur. Ut fuga officiis fugit, non odit odio modi praesentium delectus.</p>
             <div><p>all</p></div>
@@ -119,7 +147,7 @@
             </div>
         </section>
 
-        <section class="Testimonials">
+        <section class="Testimonials mx-4">
             <div>
                 <h1>testimonials</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloribus culpa odio provident sed perspiciatis dignissimos, placeat in eos commodi earum repellendus quae dolorem pariatur animi sunt perferendis harum illum.</p>
@@ -131,7 +159,7 @@
                 </div>
         </section>
 
-        <section class="CTA">
+        <section class="CTA mx-4">
                 <h1>lets design together</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ratione est adipisci suscipit reiciendis dolor autem nam perferendis earum molestias laboriosam odio fugit, labore magnam nihil cum dolorum, perspiciatis nostrum.</p>
                 <input type="email" placeholder="enter your email">
@@ -145,7 +173,7 @@
     </main>
 
     <footer>
-        <img src="Logo.svg" alt="">
+        <img src="Logo.svg" alt="logo" class="w-40 h-auto">
         <div class="flex gap-4 items-center ">
             <div><a href="">home</a></div>
             <div><a href="">about</a></div>
