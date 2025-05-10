@@ -9,12 +9,12 @@
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 <body class="bg-black text-white ">
-    <header class="head flex items-center justify-between px-3">
+    <header class="head flex items-center justify-between px-2">
         <div >
             <img src="Logo.svg" alt="logo" class="w-40 h-auto">
         </div>
-        <div class="flex items-center gap-3">
-            <div class="flex gap-4 items-center hidden md:flex ">
+        <div class="flex items-center gap-4">
+            <div class="flex gap-4 items-center hidden md:flex md:capitalize">
                 <div><a href="">home</a></div>
                 <div><a href="">about</a></div>
                 <div><a href="">sections</a></div>
@@ -33,64 +33,69 @@
 
     </header>
     <main>
-        <section class="Hero-section mx-4">
+        <section class="Hero-section mx-4 md:flex md:gap-4">
             <div class="space-y-5">
-            <div>
-                <p class="font-semibold">Hi  i am</p>
-                <p class="text-md text-orange-400 font-semibold capitalize">fawzi sayed</p>
+                <div>
+                    <p class="font-semibold">Hi  i am</p>
+                    <p class="text-md text-orange-400 font-semibold capitalize">fawzi sayed</p>
+                </div>
+                <div>
+                    <h1 class="text-5xl capitalize font-bold">uI & uX </h1>
+                    <p class="text-5xl ml-15 capitalize font-bold">designer</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta dolorem deserunt ex, ut reiciendis labore soluta fugiat laudantium neque consequuntur sequi commodi exercitationem?</p>
+                <div>
+                    <button class="bg-orange-400 px-3 py-2 rounded-md hover:bg-orange-600 capitalize">hire me</button>
+                </div>
+                
             </div>
-            <div>
-                <h1 class="text-5xl capitalize font-bold">uI & uX </h1>
-                <p class="text-5xl mx-15 capitalize font-bold">designer</p>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta dolorem deserunt ex, ut reiciendis labore soluta tenetur voluptatibus esse accusamus doloremque voluptas fugiat laudantium neque consequuntur sequi commodi exercitationem?</p>
-            <div>
-                <button class="bg-orange-400 px-3 py-2 rounded-md hover:bg-orange-600 capitalize">hire me</button>
+            <div class="">
+                
+                <img src="photo-1.png" alt="photo" class="md:w-260 md:mb-2">
+                <div class="flex justify-center gap-3">
+                    <i class="bi bi-facebook text-2xl"></i>
+                    <i class="bi bi-twitter-x text-2xl"></i>
+                    <i class="bi bi-instagram text-2xl"></i>
+                    <i class="bi bi-linkedin text-2xl"></i>
+                </div>
             </div>
             
-            </div>
-            <div>
-                <img src="photo-1.png" alt="photo" class="m-4">
-            </div>
-            <div class="flex justify-center gap-3 m-4 ">
-                <i class="bi bi-facebook text-2xl"></i>
-                <i class="bi bi-twitter-x text-2xl"></i>
-                <i class="bi bi-instagram text-2xl"></i>
-                <i class="bi bi-linkedin text-2xl"></i>
-            </div>
         </section>
 
         <section class="About-Me mx-4 my-6">
-            <div class="my-6 space-y-5">
+            <div>
+                <div class="my-6 space-y-5 md:flex md:p-3">
                 
-                <img src="photo-2.png" alt="about photo">
-
-                <div class="my-6 space-y-5">
-                    <div class="space-y-5">
-                        <h1 class="text-4xl font-semibold capitalize "> about me </h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dolorem. Maxime incidunt, officia enim, eum doloremque ipsam harum magni ullam</p>
+                    <img src="photo-2.png" alt="about photo" class="md:w-120 h-auto">
+    
+                    <div class="my-6 space-y-5">
+                        <div></div>
+                        <div class="space-y-5">
+                            <h1 class="text-4xl font-semibold capitalize "> about me </h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dolorem. Maxime incidunt, officia enim, eum doloremque ipsam harum magni ullam</p>
+                        </div>
+                        
+                        <div>
+                            <p class="font-semibold capitalize">uX</p>
+                            <img src="level.svg" alt="">
+                        </div>
+    
+                        <div>
+                            <p class="font-semibold capitalize">website design</p>
+                            <img src="level.svg" alt="">
+                        </div>
+    
+                        <div>
+                            <p class="font-semibold capitalize">app design</p>
+                            <img src="level.svg" alt="">
+                        </div>
+    
+                        <div>
+                            <p class="font-semibold capitalize">graphic design</p>
+                            <img src="level.svg" alt="">
+                        </div>
                     </div>
-                    
-                    <div>
-                        <p class="font-semibold capitalize">uX</p>
-                        <img src="level.svg" alt="">
-                    </div>
-
-                    <div>
-                        <p class="font-semibold capitalize">website design</p>
-                        <img src="level.svg" alt="">
-                    </div>
-
-                    <div>
-                        <p class="font-semibold capitalize">app design</p>
-                        <img src="level.svg" alt="">
-                    </div>
-
-                    <div>
-                        <p class="font-semibold capitalize">graphic design</p>
-                        <img src="level.svg" alt="">
-                    </div>
-                </div>
+            </div>
         </section>
 
         <section class="Services mx-4 my-6">
